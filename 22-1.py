@@ -1,9 +1,10 @@
 #write a program to copy a text file to another file
 
-file1=input("enter the source file to be copied:")
+file1=input("enter the source file to be copied:")#enter file 
 file2=input("enter the destination file name:")
-fr=open(file1,"r")
-fw=open(file2,"w")
+fr=open(file1,"r")#open file1 in 'r' mode
+fw=open(file2,"w")#open file2 in 'w mode'
+#copying file1 to file2
 for line in fr.readlines():
     fw.write(line)
 fr.close()
